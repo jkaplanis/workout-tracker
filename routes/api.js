@@ -34,7 +34,19 @@ router.get("/api/workouts", (req, res) => {
 
 // Respond with json array containing the last 7 workouts
 router.get("/api/workouts/range", (req, res) => {
-  // CODE HERE
+  db.Workout.find({})
+    .then(dbWorkout => {
+      if (dbWorkout.length > 7) {
+        const removeNum = dbWorkout.length - 7;
+        dbWorkout.splice(0, removeNum);
+        res.json(dbWorkout);
+      } else {
+        res.json(dbWorkout);
+      }
+    })
+    .catch(err => {
+      res.json(err);
+    });
 });
 
 // Delete workout with id matching id in the request body.
