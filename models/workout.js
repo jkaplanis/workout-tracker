@@ -19,24 +19,16 @@ const WorkoutSchema = new Schema({
         required: "Workout name is required"
       },
       duration: {
-        type: Number,
-        required: "You must enter a duration",
-        min: 1
+        type: Number
       },
       weight: {
-        type: Number,
-        required: "You must enter a weight",
-        min: 1
+        type: Number
       },
       reps: {
-        type: Number,
-        required: "You must enter a number of reps",
-        min: 1
+        type: Number
       },
       sets: {
-        type: Number,
-        required: "You must enter a number of sets",
-        min: 1
+        type: Number
       }
     }
   ]
