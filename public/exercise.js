@@ -26,9 +26,8 @@ async function initExercise() {
     console.log(workout);
   }
   if (workout) {
-    location.search = `?id=${ workout._id}`;
+    location.search = `?id=${workout._id}`;
   }
-
 }
 
 initExercise();
@@ -127,6 +126,7 @@ async function handleFormSubmit(event) {
     workoutData.duration = Number(resistanceDurationInput.value.trim());
   }
 
+  console.log(workoutData);
   await API.addExercise(workoutData);
   clearInputs();
   toast.classList.add("success");
@@ -154,7 +154,7 @@ if (workoutTypeSelect) {
   workoutTypeSelect.addEventListener("change", handleWorkoutTypeChange);
 }
 if (completeButton) {
-  completeButton.addEventListener("click", (event) => {
+  completeButton.addEventListener("click", event => {
     shouldNavigateAway = true;
     handleFormSubmit(event);
   });
