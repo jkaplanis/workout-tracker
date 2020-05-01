@@ -13,7 +13,7 @@ This app allows you to track your workouts and see performance stats using Mongo
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
+- [Screenshots](#screenshots)
 - [Questions](#questions)
 
 ## Installation
