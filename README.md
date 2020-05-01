@@ -40,11 +40,9 @@ Simply make a pull request with a detailed description and screenshots
 
 ## Tests
 
-To run test, run the command below:
-
-```
-npm test
-```
+![Home Page](/images/screenshot1.png)  
+![Enter Workout](/images/screenshot2.png)  
+![Charts](/images/screenshot3.png)  
 
 ## Questions
 
